@@ -5,19 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/banner.css">
     <link rel="stylesheet" href="./assets/css/productos.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
 
     <script src="https://kit.fontawesome.com/9824ba3b86.js" crossorigin="anonymous"></script>
 </head>
 <body class="app">
     <header class="encabezado alineacion">
         <div class="encabezado__logo">
-            <i class="fa-solid fa-gamepad encabezado__logo-i"></i>
-            <p class="encabezado__titulo">Alura<strong>Geek</strong></p>
+            <img  class="encabezado__logo-img" src="./assets/img/Logo.png" alt="logo">
         </div>
         <div class="encabezado__buscar">
             <input type="text" class="encabezado__input" placeholder="¿Qué deseas buscar?">
@@ -259,12 +263,55 @@
             </div>
             
         </section>
+
+        <section class="contacto">
+            <div class="contacto__contenido alineacion">
+                <div class="contacto__grupo-logoLinks">   
+                   <div class="contacto__logo">
+                       <img class="contacto__logo-img" src="./assets/img/Logo.png" alt="logo">
+                   </div>
+                   <div class="contacto__links">
+                       <ul class="contacto__ul">
+                           <li class="contacto__li"><a class="contacto__a" href="#">Quienes somos</a></li>
+                           <li class="contacto__li"><a class="contacto__a" href="#">Politica de privacidad</a></li>
+                           <li class="contacto__li"><a class="contacto__a" href="#">Programa de fidelidad</a></li>
+                           <li class="contacto__li"><a class="contacto__a" href="#">Nuestras tiendas</a></li>
+                           <li class="contacto__li"><a class="contacto__a" href="#">Quiero ser franquiciado</a></li>
+                           <li class="contacto__li"><a class="contacto__a" href="#">Anúncie aquí</a></li>
+                       </ul>
+                   </div>
+                </div>
+                <div class="form">
+                    <form  id="formulario" action="">
+                        <fieldset>
+                            <legend class="formulario__legend">Hable con nosotros</legend>
+                             <div class="formulario__grupo form-inputs" id="grupo-nombre">
+                                <label for="nombre" class="formulario__label">Nombre</label>
+                                <div class="formulario__grupo-input">
+                                  <input type="text" id="nombre" name="nombre" class="input-padron formulario__input " placeholder="Ana karen ">
+                                </div>
+                              </div>
+                              <div class="formulario__grupo form-inputs" id="grupo-mensaje">
+                                <label for="mensaje" class="formulario__label"></label>
+                                <div class="formulario__grupo-input">
+                                    <textarea  rows="2" id="mensaje" name="mensaje" class="input-padron formulario__input" placeholder="Escribe tu mensaje"></textarea>
+                                </div>
+                              </div>
+        
+                              <div class="formulario__grupo-btn-enviar">
+                                <input type="submit" value="Enviar mensaje" class="formulario__btn btn-enviar">
+                              </div>
+                          </fieldset>
+                    </form>  
+                </div>
+            </div>
+        </section>
     </main>
 
-
-
-
-
+    <footer>
+        <p>Desarrollado por Karen Jasso</p>
+        <p>2022</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

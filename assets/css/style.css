@@ -1,3 +1,6 @@
+*{
+  font-family:  'Lato', sans-serif;
+}
 .alineacion {
   max-width: 940px;
   margin: 0 auto;

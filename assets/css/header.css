@@ -12,18 +12,8 @@
   align-items: center;
   justify-content: flex-start;
 }
-.encabezado__logo-i {
-  color: #2a7ae4;
-  font-size: 2rem;
-}
-
-.encabezado__titulo {
-  color: #2a7ae4;
-  font-size: 1.0999rem;
-  font-weight: bolder;
-}
-.encabezado__titulo strong {
-  color: #464646;
+.encabezado__logo-img {
+  width: 90%;
 }
 .encabezado__buscar:nth-of-type(2) {
   order: 2;

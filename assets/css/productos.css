@@ -1,3 +1,6 @@
+.productos{
+  background: #E5E5E5;
+}
 .productos__card {
   display: grid;
   grid-template-areas:
