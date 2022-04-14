@@ -1,3 +1,8 @@
+.alineacion{
+  width: auto;
+  padding: 10px;
+}
+
 .encabezado {
   display: flex;
   justify-content: space-between;
@@ -7,34 +12,42 @@
 .encabezado__logo:nth-of-type(1) {
   order: 1;
 }
+
 .encabezado__logo {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-width: 100px;
-  width: 20%;
+  width: 37%;
+  max-width: 400px;
+  height: auto;
 }
-.encabezado__logo-img {
-  width: 90%;
+.encabezado__logo-img{
+  width: 100%;
 }
 .encabezado__buscar{
   display: flex;
   justify-content: center;
   align-items: center;
+  background: none;
+  margin-right: 0;
   padding: 1%;
-  height: 2vh;
-  border-radius: 40px;
-  background-color: #F5F5F5;
-  margin-right: 20%;
+  height: 6vh;
 }
+
 .encabezado__input{
   border: none;
   background: none;
   outline: none;
   line-height: 60px;
-  width: 29vw;
+  width: 0;
   font-size: 1rem;
 }
+
+.encabezado__buscar:hover > .encabezado__input {
+  transition: width 0.6s ease-in-out;
+  width: 200px;
+}
+
 .encabezado__btn-buscar {
   border: none;
   background: none;
@@ -44,24 +57,26 @@
   color: #a2a2a2;
 }
 .encabezado__buscar:nth-of-type(2) {
+  order: 3;
+}
+.encabezado__login:nth-of-type(3) {
   order: 2;
 }
 
-.encabezado__login:nth-of-type(3) {
-  order: 3;
-}
 .encabezado__login {
   border: 1px solid #2a7ae4;
   cursor: pointer;
-  height: 25px;
-  padding: 1% 0;
+  height: 30px;
+  padding: 2% 0;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
 }
-
+.encabezado__login {
+  width: 28%;
+}
 .encabezado__login-btn {
   border: none;
   background: none;
@@ -78,32 +93,26 @@
 
 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .alineacion {
-    width: auto;
-    padding: 10px;
-  }
-  .encabezado__logo-img{
-    width: 100%;
-  }
+ @media only screen and (min-width: 768px)  {
   .encabezado__buscar{
-    margin-right: 0;
-    background: none;
+    border-radius: 40px;
+    margin-right: 13%;
+    background-color: #F5F5F5;
+    height: 5vh;
   }
   .encabezado__input{
-    width: 0;
+    width: 29vw;
   }
+  
   .encabezado__buscar:hover > .encabezado__input {
-    transition: width 0.6s ease-in-out;
-    width: 160px;
+    width: 29vw;
   }
+
   .encabezado__buscar:nth-of-type(2) {
-    order: 3;
+  order: 2;
   }
+  
   .encabezado__login:nth-of-type(3) {
-    order: 2;
-  }
-  .encabezado__login {
-    width: 28%;
+    order: 3;
   }
 }

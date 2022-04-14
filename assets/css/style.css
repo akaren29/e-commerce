@@ -1,7 +1,16 @@
+:root{
+  --raleway: 'Raleway', sans-serif;
+}
+
 *{
   font-family:  'Lato', sans-serif;
-
+  box-sizing: border-box;
 }
+
+body{
+  font-family: var(--raleway);
+}
+
 .alineacion {
   max-width: 940px;
   margin: 0 auto;
