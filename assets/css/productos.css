@@ -94,5 +94,6 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .productos__card {
     width: 47%;
+    margin-top: 4%;
   }
 }

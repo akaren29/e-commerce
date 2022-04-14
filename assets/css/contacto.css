@@ -37,18 +37,24 @@
     background: #FFFFFF;
     border-radius: 4px;
     margin: 2% 0;
+    border-bottom: 2px solid #C8C8C8;
 }
 
 .formulario__label{
     color: #A2A2A2;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+textarea{
+    overflow: auto;
 }
 .formulario__input{
     border: none;
+    outline: none;
     color: #464646;
     font-weight: 600;
     padding: 1% 2%;
-    width: 334px;
+    width: 95%;
 }
 .formulario__label{
     padding: 1% 2%;
@@ -102,6 +108,6 @@
         width: 100%;
     }
     .formulario__input{
-        width: auto;
+        width: 95%;
     }
   }

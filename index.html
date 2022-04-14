@@ -21,7 +21,7 @@
 <body class="app">
     <header class="encabezado alineacion">
         <div class="encabezado__logo">
-            <img  class="encabezado__logo-img" src="./assets/img/Logo.png" alt="logo">
+            <a class="contacto__a" href="./index.html"><img  class="encabezado__logo-img" src="./assets/img/Logo.png" alt="logo"></a>
         </div>
         <div class="encabezado__buscar">
             <input type="text" class="encabezado__input" placeholder="¿Qué deseas buscar?">
@@ -30,7 +30,7 @@
             </button>
         </div>
         <div class="encabezado__login">
-            <button class="encabezado__login-btn">Login</button>
+             <button class="encabezado__login-btn"> <a class="contacto__a" href="./iniciarSesion.html">Login</a></button>
         </div>
     </header>
     <main class="contenido">  
@@ -288,13 +288,13 @@
                              <div class="formulario__grupo form-inputs" id="grupo-nombre">
                                 <label for="nombre" class="formulario__label">Nombre</label>
                                 <div class="formulario__grupo-input">
-                                  <input type="text" id="nombre" name="nombre" class="input-padron formulario__input " placeholder="Ana karen ">
+                                  <input type="text" id="nombre" name="nombre" class="input-padron formulario__input" required>
                                 </div>
                               </div>
                               <div class="formulario__grupo form-inputs" id="grupo-mensaje">
                                 <label for="mensaje" class="formulario__label"></label>
                                 <div class="formulario__grupo-input">
-                                    <textarea  rows="2" id="mensaje" name="mensaje" class="input-padron formulario__input" placeholder="Escribe tu mensaje"></textarea>
+                                    <textarea  rows="4" autocomplete="off" type="text" id="mensaje" name="mensaje" class="input-padron formulario__input" placeholder="Escribe tu mensaje" required></textarea>
                                 </div>
                               </div>
         
