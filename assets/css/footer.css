@@ -1,6 +1,7 @@
 footer{
-    color: #464646;
+    color: var(--fuente-negro);
     text-align: center;
+    font-weight: 600;
     line-height: 22.78px; 
     padding: 2% 2%;
 }

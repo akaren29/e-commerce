@@ -1,5 +1,13 @@
 :root{
   --raleway: 'Raleway', sans-serif;
+  --fuente-azul: #2A7AE4;
+  --background-gris: #F5F5F5;
+  --background-gris-bajo: #E5E5E5;
+  --background-azul-bajo: #EAF2FD;
+  --fuente-blanco: #ffffff;
+  --fuente-negro: #464646;
+  --fuente-border-gris: #C8C8C8;
+  --background-gris-border: #A2A2A2;
 }
 
 *{
@@ -9,10 +17,17 @@
 
 body{
   font-family: var(--raleway);
+  font-size: 16px;
 }
 
 .alineacion {
   max-width: 940px;
   margin: 0 auto;
   padding: 24px;
+}
+
+@media (max-width: 768px){
+  .alineacion{
+    padding: 10px;
+  }
 }

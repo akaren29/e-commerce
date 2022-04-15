@@ -3,52 +3,62 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),
     url("../img/hero.jpg") no-repeat center / cover;
-  height: 352px;
-}
-.banner__box {
+  min-height: 192px;
   position: relative;
 }
+.banner__box {
+  min-height: 188px;
+  max-height: 348px;
+  display: flex;
+  align-items: flex-end;
+
+}
 .banner__contenido {
-  position: absolute;
-  margin-top: 15%;
-  line-height: 50px;
+  line-height: 40px;
 }
 .banner__titulo-principal {
-  color: #ffffff;
-  font-size: 3rem;
+  color: var(--fuente-blanco);
+  font-size: 1.4rem;
   font-weight: bolder;
 }
 .banner__titulo-adicional {
-  color: #ffffff;
-  font-size: 1.5rem;
+  color: var(--fuente-blanco);
+  font-size: 0.8rem;
   font-weight: bolder;
+  line-height: 20px;
 }
 .banner__btn {
-  background-color: #2a7ae4;
+  background-color: var(--fuente-azul);
   border: none;
-  color: #ffffff;
+  color: var(--fuente-blanco);
   cursor: pointer;
   outline: none;
-  height: 50px;
-  min-width: 35%;
-  width: 23%;
+  height: 31px;
+  min-width: 118px;
+  font-size: 0.8rem;
+  margin-top: 2%;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 768px)  {
+  .banner{
+    height: 352px;
+  }
+  .banner__box {
+    height: 348px;
+  }
   .banner__contenido {
-    line-height: 50px;
-    margin-top: 44%;
+    line-height: 90px;
   }
   .banner__titulo-principal {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
   .banner__titulo-adicional {
-    font-size: 1rem;
-    line-height: 20px;
+    font-size: 1.5rem;
   }
   .banner__btn {
-    margin-top: 3%;
-    height: 50px;
-    font-size: 0.8rem;
+    margin-top: 2%;
+    height: 8vh;
+    width: 30%;
+    font-size: 1rem;
   }
 }
