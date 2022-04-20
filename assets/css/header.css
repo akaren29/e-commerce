@@ -37,6 +37,7 @@
   line-height: 60px;
   width: 0;
   font-size: 1rem;
+  font-family: var(--raleway);
 }
 
 .encabezado__buscar:hover > .encabezado__input {
@@ -80,6 +81,10 @@
   outline: none;
   padding: 2.5% 0;
   cursor: pointer;
+}
+.encabezado__login-btn a{
+  color: var(--fuente-azul);
+  text-decoration: none;
 }
 .encabezado__login:hover{
   background-color: var(--background-gris);

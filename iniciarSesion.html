@@ -5,105 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesion</title>
+    <script src="https://kit.fontawesome.com/9824ba3b86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <script src="assets/components/header-component.js" type="text/javascript" defer></script>
+    <script src="assets/components/footer-component.js" type="text/javascript" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/contacto.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/productos.css">
     <link rel="stylesheet" href="./assets/css/iniciar-sesion.css">
-
-    <script src="https://kit.fontawesome.com/9824ba3b86.js" crossorigin="anonymous"></script>
 </head>
 <body class="app">
-    <header class="encabezado alineacion">
-        <div class="encabezado__logo">
-            <a class="contacto__a" href="./index.html"><img  class="encabezado__logo-img" src="./assets/img/Logo.png" alt="logo"></a>
-        </div>
-        <div class="encabezado__buscar">
-            <input type="text" class="encabezado__input" placeholder="¿Qué deseas buscar?">
-            <button class="encabezado__btn-buscar">
-                <i class="fa-solid fa-magnifying-glass encabezado__buscar-i"></i> 
-            </button>
-        </div>
-        <div class="encabezado__login">
-            <button class="encabezado__login-btn">Login</button>
-        </div>
-    </header>
-
+    <header-component></header-component>
     <main class="contenido"> 
         <section class="iniciar__sesion">
             <div class="iniciar__sesion-contenido alineacion">
                 <h2 class="iniciar__sesion-titulo">Iniciar Sesión</h2>
-             <form class="login__formulario login-iniciarsesion" action="">
-                 <div class="formulario__grupo form-inputs form-iniciarsesion" id="grupo-email">
+             <form class="formulario__sesion" action="">
+                 <div class="form-iniciarsesion" >
                      <div class="formulario__grupo-input">
-                         <input class="input-padron formulario__input" name="email" type="email" autocomplete="off" placeholder="Escriba su correo electrónico" required>
+                         <input class="input-padron" name="email" type="email" autocomplete="off" placeholder="Escriba su correo electrónico" required>
                      </div>
                  </div>
                  
-                 <div class="formulario__grupo form-inputs form-iniciarsesion" id="grupo-email">
+                 <div class="form-iniciarsesion" >
                      <div class="formulario__grupo-input">
-                         <input class="input-padron formulario__input" name="password"  type="password" autocomplete="off" placeholder="Escriba su contraseña" required>
+                         <input class="input-padron" name="password"  type="password" autocomplete="off" placeholder="Escriba su contraseña" required>
                      </div>
                  </div>
                  
-                 <div class="formulario__grupo-btn-enviar form-iniciarsesion">
-                     <input type="submit" class="formulario__btn btn-enviar btn-sesion" value="Entrar">
+                 <div class="form-iniciarsesion">
+                     <input type="submit" class="btn-sesion_enviar" value="Entrar">
                  </div>
              </form>
             </div>  
         </section>
 
-        <section class="contacto">
-            <div class="contacto__contenido alineacion">
-                <div class="contacto__grupo-logoLinks">   
-                   <div class="contacto__logo">
-                       <img class="contacto__logo-img" src="./assets/img/Logo.png" alt="logo">
-                   </div>
-                   <div class="contacto__links">
-                       <ul class="contacto__ul">
-                           <li class="contacto__li"><a class="contacto__a" href="#">Quienes somos</a></li>
-                           <li class="contacto__li"><a class="contacto__a" href="#">Politica de privacidad</a></li>
-                           <li class="contacto__li"><a class="contacto__a" href="#">Programa de fidelidad</a></li>
-                           <li class="contacto__li"><a class="contacto__a" href="#">Nuestras tiendas</a></li>
-                           <li class="contacto__li"><a class="contacto__a" href="#">Quiero ser franquiciado</a></li>
-                           <li class="contacto__li"><a class="contacto__a" href="#">Anúncie aquí</a></li>
-                       </ul>
-                   </div>
-                </div>
-                <div class="form">
-                    <form  id="formulario" action="">
-                        <fieldset>
-                            <legend class="formulario__legend">Hable con nosotros</legend>
-                             <div class="formulario__grupo form-inputs" id="grupo-nombre">
-                                <label for="nombre" class="formulario__label">Nombre</label>
-                                <div class="formulario__grupo-input">
-                                  <input type="text" id="nombre" name="nombre" class="input-padron formulario__input" required>
-                                </div>
-                              </div>
-                              <div class="formulario__grupo form-inputs" id="grupo-mensaje">
-                                <label for="mensaje" class="formulario__label"></label>
-                                <div class="formulario__grupo-input">
-                                    <textarea  rows="4" autocomplete="off" type="text" id="mensaje" name="mensaje" class="input-padron formulario__input" placeholder="Escribe tu mensaje" required></textarea>
-                                </div>
-                              </div>
-        
-                              <div class="formulario__grupo-btn-enviar">
-                                <input type="submit" value="Enviar mensaje" class="formulario__btn btn-enviar">
-                              </div>
-                          </fieldset>
-                    </form>  
-                </div>
-            </div>
-        </section>
+        <footer-component></footer-component>        
     </main>
 
-    <footer>
-        <p>Desarrollado por Karen Jasso</p>
-        <p>2022</p>
-    </footer>
 </body>
 </html>
