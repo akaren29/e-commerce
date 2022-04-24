@@ -37,13 +37,15 @@
   font-size: 22px;
   font-weight: 700;
 }
-.productos__boton {
+.productos__boton,
+.productos__boton-a {
   background: none;
   border: none;
   color: var(--fuente-azul);
   cursor: pointer;
   outline: none;
-  font-size: 14px;
+  font-size: 16px;
+  text-decoration: none;
 }
 .productos__grupo {
   display: flex;
@@ -76,7 +78,10 @@
   outline: none;
   text-align: left;
 }
-
+.productos__card-a{
+  text-decoration: none;
+  color: var(--fuente-azul);
+}
 @media only screen and (min-width: 768px) {
   .productos__grupo {
     flex-wrap: nowrap;

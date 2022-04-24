@@ -80,4 +80,4 @@ class FooterSectionComponent extends HTMLElement{
     }
 }
 
-window.customElements.define("footer-component", FooterSectionComponent)
+customElements.define("footer-component", FooterSectionComponent)

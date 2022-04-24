@@ -1,0 +1,171 @@
+.todoslosproductos__h2{
+    font-family: var(--raleway);
+    font-weight: 700;
+    color: var(--fuente-negro);
+    font-size: 22px;
+    padding: 5% 0;
+}
+.todoslosproductos__boton{
+    width: 150px;
+    height: 40px;
+    background-color: var(--fuente-azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.todoslosproductos__boton-a{
+    text-decoration: none;
+    color: var(--fuente-blanco);
+}
+
+.todoslosproductos__grupo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-area: contenido;
+    gap: 0.7rem;
+}
+.todoslosproductos__card{
+  display: grid;
+  grid-template-areas:
+    "card-imagen"
+    "card-info";
+  grid-template-columns: 100%;
+  grid-template-rows: 179px auto;
+  margin-top: 4%;
+  width: 47%;
+}
+.starwars1{
+    background: url("../img/starWars/starwars1.png") no-repeat center/cover;  
+}
+.starwars2{
+    background: url("../img/starWars/starwars2.png") no-repeat center/cover;  
+}
+.starwars3{
+    background: url("../img/starWars/starwars3.png") no-repeat center/cover;  
+}
+.starwars4{
+    background: url("../img/starWars/starwars4.png") no-repeat center/cover;  
+}
+.starwars5{
+    background: url("../img/starWars/starwars5.png") no-repeat center/cover;  
+}
+.starwars6{
+    background: url("../img/starWars/starwars6.png") no-repeat center/cover;  
+}
+
+.consolas1{
+    background: url("../img/consolas/consolas1.png") no-repeat center/cover;  
+}
+.consolas2{
+    background: url("../img/consolas/consolas2.png") no-repeat center/cover;  
+}
+.consolas3{
+    background: url("../img/consolas/consolas3.png") no-repeat center/cover;  
+}
+.consolas4{
+    background: url("../img/consolas/consolas4.png") no-repeat center/cover;  
+}
+.consolas5{
+    background: url("../img/consolas/consolas5.png") no-repeat center/cover;  
+}
+.consolas6{
+    background: url("../img/consolas/consolas6.png") no-repeat center/cover;  
+}
+
+.diversos1{
+    background: url("../img/diversos/diversos1.png") no-repeat center/cover;  
+}
+.diversos2{
+    background: url("../img/diversos/diversos2.png") no-repeat center/cover;  
+}
+.diversos3{
+    background: url("../img/diversos/diversos3.png") no-repeat center/cover;  
+}
+.diversos4{
+    background: url("../img/diversos/diversos4.png") no-repeat center/cover;  
+}
+.diversos5{
+    background: url("../img/diversos/diversos5.png") no-repeat center/cover;  
+}
+.diversos6{
+    background: url("../img/diversos/diversos6.png") no-repeat center/cover;  
+}
+
+.todoslosproductos__imagen1{
+    grid-area: card-imagen;
+    height: 174px;
+    width: 100%;
+}
+.todoslosproductos__i-contenido{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5% 5%;
+}
+.todoslosproductos__i-contenido > button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.todoslosproductos__i{
+    color: var(--fuente-blanco);
+    margin-left: 18%;
+}
+.todoslosproductos__card-info{
+   display: grid;
+  grid-area: card-info;
+  grid-row-gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+.todoslosproductos__card-descripcion{
+    color: var(--fuente-negro);
+  font-size: 14px;
+  font-weight: 500;
+}
+.todoslosproductos__card-precio{
+    color: var(--fuente-negro);
+  font-weight: 700;
+  font-size: 16px;
+}
+.todoslosproductos__card-btn{
+    background: none;
+  border: none;
+  color: var(--fuente-azul);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  outline: none;
+  text-align: left;
+}
+.todoslosproductos__card-a{
+    text-decoration: none;
+    color: var(--fuente-azul);
+}
+
+@media only screen and (min-width: 768px) {
+    .todoslosproductos__header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .todoslosproductos__grupo { 
+        justify-content: flex-start;
+        padding: 0 1%;
+        gap: 1.2rem;
+    }
+    .todoslosproductos__card{
+        width: 164px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .todoslosproductos__card{
+        width: 137px;
+    }
+    .todoslosproductos__grupo { 
+        justify-content: flex-start;
+        gap: 0.7rem;
+        padding: 0;
+
+    }
+}

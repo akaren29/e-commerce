@@ -61,4 +61,8 @@
     width: 30%;
     font-size: 1rem;
   }
+  .banner__btn a{
+    text-decoration: none;
+    color: var(--fuente-blanco);
+  }
 }

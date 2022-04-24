@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <script src="https://kit.fontawesome.com/9824ba3b86.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <script src="assets/components/header-component.js" type="text/javascript" defer></script>
+    <script src="assets/components/footer-component.js" type="text/javascript" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/banner.css">
+    <link rel="stylesheet" href="./assets/css/iniciar-sesion.css">
+    <link rel="stylesheet" href="./assets/css/agregar-producto.css">
+</head>
+<body class="app">
+    <header-component></header-component>
+    <main class="contenido"> 
+        <section class="agregar__producto">
+            <div class="agregar__producto-container alineacion">
+                <h2 class="agregar__producto-titulo">Agregar nuevo producto</h2>
+                <form action="">
+                    <div class="agregar__producto-file">
+                       <div class="agregar__producto-drag-drop">
+                        <label class="agregar__producto-label" for="archivo"></label>
+                        <input class="agregar__producto-input" type="file" id="archivo" hidden></input>
+                        <div class="agregar__producto-input-icon"></div>
+                        <h3 class="agregar__producto-h3"></h3>
+                       </div>
+                        <span class="agregar__producto-span">ó</span>
+                      <div class="agregar__producto-btn">
+                          <button></button>
+                      </div>
+                    </div>
+                    <div class="agregar__producto-formulario">
+                        <label for="nombre" class="formulario__label">Nombre del producto</label>
+                        <div class="agregar__producto-formularioinput">
+                          <input type="text" id="nombre" name="nombre" class="formulario__input" required>
+                        </div>
+                    </div>
+                    <div class="agregar__producto-formulario">
+                        <label for="nombre" class="formulario__label">Precio del producto</label>
+                        <div class="agregar__producto-formularioinput">
+                          <input type="text" id="precio" name="precio" class="formulario__input" required>
+                        </div>
+                    </div>
+                    <div class="agregar__producto-formulario mensaje">
+                        <label for="mensaje" class="formulario__label"></label>
+                        <div class="agregar__producto-formularioinput">
+                            <textarea  autocomplete="off" type="text" id="mensaje" name="mensaje" class="formulario__input" placeholder="Descripción del producto" required></textarea>
+                        </div>
+                    </div>
+                    <div class="agregar__producto-formularioBtn">
+                        <input type="submit" value="Agregar producto" class="formulario__btn-enviar">
+                    </div>
+                </form>   
+            </div>
+        </section>
+        <footer-component></footer-component>        
+    </main>
+
+</body>
+</html>

@@ -12,9 +12,11 @@ headerTemplate.innerHTML = `
                 <i class="fa-solid fa-magnifying-glass encabezado__buscar-i"></i> 
             </button>
         </div>
+        
         <div class="encabezado__login">
-        <button class="encabezado__login-btn"> <a class="contacto__a" href="iniciarSesion.html">Login</a></button>
+         <a class="encabezado__login-a" href="iniciarSesion.html">Login</a>
         </div>
+        
     </header>
 `;
 
@@ -46,4 +48,4 @@ class HeaderSectionComponent extends HTMLElement{
     }
 }
 
-window.customElements.define("header-component", HeaderSectionComponent)
+customElements.define("header-component", HeaderSectionComponent)
